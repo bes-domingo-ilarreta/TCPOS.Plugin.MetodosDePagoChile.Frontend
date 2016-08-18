@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C68A3FA4-A31C-4DA8-AED4-20B1D65CCD0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Plugin.MetodosDePagoChile.Frontend</RootNamespace>
+    <AssemblyName>Plugin.MetodosDePagoChile.Frontend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TCPOS.DbHelper">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.Debug">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.FrontEnd.BusinessLogic">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.FrontEnd.BusinessLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.FrontEnd.DataClasses">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.FrontEnd.DataClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.FrontEnd.SharedClasses">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.FrontEnd.SharedClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.FrontEnd.UserInterface.Controls">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.FrontEnd.UserInterface.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.FrontEnd.UserInterface.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.FrontEnd.UserInterface.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.Translation">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.Translation.dll</HintPath>
+    </Reference>
+    <Reference Include="TCPOS.Utilities">
+      <HintPath>..\..\..\..\..\..\..\TCPOS.NET\FrontEnd\Executables\4.5.13.0\TCPOS.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller.cs" />
+    <Compile Include="CreditoClass.cs" />
+    <Compile Include="CreditoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditoForm.Designer.cs">
+      <DependentUpon>CreditoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebitoClass.cs" />
+    <Compile Include="DebitoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebitoForm.Designer.cs">
+      <DependentUpon>DebitoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Methods.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TransTableBesCheque.cs" />
+    <Compile Include="TransTableBesCredit.cs" />
+    <Compile Include="TransTableBesDebit.cs" />
+    <Compile Include="TransTableBesDebitoCredito.cs" />
+    <Compile Include="Validates.cs" />
+    <Compile Include="ViewFormAnularVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFormAnularVenta.Designer.cs">
+      <DependentUpon>ViewFormAnularVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFormCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFormCheque.Designer.cs">
+      <DependentUpon>ViewFormCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFormCreditoDebito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFormCreditoDebito.Designer.cs">
+      <DependentUpon>ViewFormCreditoDebito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFormDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFormDetalleVenta.Designer.cs">
+      <DependentUpon>ViewFormDetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFormManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFormManual.Designer.cs">
+      <DependentUpon>ViewFormManual.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreditoForm.resx">
+      <DependentUpon>CreditoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebitoForm.resx">
+      <DependentUpon>DebitoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFormAnularVenta.resx">
+      <DependentUpon>ViewFormAnularVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFormCheque.resx">
+      <DependentUpon>ViewFormCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFormCreditoDebito.resx">
+      <DependentUpon>ViewFormCreditoDebito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFormDetalleVenta.resx">
+      <DependentUpon>ViewFormDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewFormManual.resx">
+      <DependentUpon>ViewFormManual.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

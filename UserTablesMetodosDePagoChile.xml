@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file contains the definition of custom tables.                                          -->
+<!-- For each custom table the following structure must be used:                                  -->
+<!--                                                                                              -->
+<!-- <table>                                                                                      -->
+<!-- <name>tablename, mandatory</name>                                                            -->
+<!-- <query>The SELECT statement used to select data from the central database, mandatory</query> -->
+<!--  <index>The SQL statement used to create an index in the local database, Optional</index>    -->
+<!-- </table>                                                                                     -->
+<!--                                                                                              -->
+<!-- It is possible to create several indexes per table.                                          -->
+
+<user-tables>
+
+<!-- bes_banks -->
+<table>
+<name>bes_banks</name>
+<query>SELECT * FROM bes_banks</query>
+</table>
+
+<!-- trans_bes_cheque -->
+<table>
+<name>trans_bes_cheque</name>
+<query>SELECT * FROM trans_bes_cheque</query>
+</table>
+
+<!-- trans_bes_debito_credito -->
+<table>
+<name>trans_bes_debito_credito</name>
+<query>SELECT * FROM trans_bes_debito_credito</query>
+</table>
+
+<!-- trans_bes_debito -->
+<table>
+<name>trans_bes_debito</name>
+<query>SELECT * FROM trans_bes_debito</query>
+</table>
+
+<!-- trans_bes_credito -->
+<table>
+<name>trans_bes_credito</name>
+<query>SELECT * FROM trans_bes_credito</query>
+</table>
+
+</user-tables>
